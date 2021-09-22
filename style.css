@@ -2,3 +2,9 @@
     background-color: rgb(50, 167, 145);
     display: flex;
 }
+main{
+    display:flex;
+}
+.evaluation-form{
+    width: 675px;
+}
