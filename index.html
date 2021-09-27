@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Projeto Trybewarts</title>
 </head>
 
 <body>
@@ -20,25 +20,29 @@
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <!-- Requisito 3 Adelson -->
     <form action="#" class="trybewarts-login">
-      <input type="email" name="email" placeholder="Email" id="input-email-login">
-      <input type="password" name="password" placeholder="Senha" id="input-password-login">
-      <button id="btn-enter">Entrar</button>
+      <input class="input-styles" type="email" name="email" placeholder="Email" id="input-email-login">
+      <input class="input-styles" type="password" name="password" placeholder="Senha" id="input-password-login">
+      <button class="btn-styles" id="btn-enter">Entrar</button>
     </form>
   </header>
   <!-- Requisito 5 Adelson -->
   <main id="main-form">
     <form action="#" id="evaluation-form">
+      <div id="form-title">
+        <h1>Formulário de Avaliação</h1>
+      </div>
       <!-- Requisito 8 Rafael -->
       <div class="validation-input">
-        <input type="text" placeholder="Nome" id="input-name">
-        <input type="text" placeholder="Sobrenome" id="input-lastname">
+        <input class="input-styles input-validation submit-form" type="text" placeholder="Nome" id="input-name">
+        <input class="input-styles input-validation submit-form" type="text" placeholder="Sobrenome"
+          id="input-lastname">
       </div>
       <div class="validation-input">
-        <input type="email" placeholder="Email" id="input-email">
+        <input class="input-styles input-validation submit-form" type="email" placeholder="Email" id="input-email">
         <!-- Requisito 9 Adelson -->
         <label for="house">Casa:</label>
-        <select name="" id="house">
-          <option type="text" value="Gitnória" id="gitnoria-house">Gitnória</option>
+        <select class="select-estiloso" name="" id="house">
+          <option class="option-styles" type="text" value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option type="text" value="Reactpuff" id="reactpuff-house">Reactpuff</option>
           <option type="text" value="Corvinode" id="corvinode-house">Corvinode</option>
           <option type="text" value="Pytherina" id="pytherina-house">Pytherina</option>
@@ -47,18 +51,18 @@
       <hr>
       <!-- Requisito 12 Rafael -->
       <div class="validation-input-family">
-        <div class="input-radio">
+        <div class="input-radio-family">
           <label for="" id="label-family">Qual sua família?</label>
           <div>
-            <input type="radio" name="family" value="Frontend" id="input-frontend">
+            <input class="input-radio" type="radio" name="family" value="Frontend" id="input-frontend">
             <label for="input-frontend">Família Frontend</label>
           </div>
           <div>
-            <input type="radio" name="family" value="Backend" id="input-backend">
+            <input class="input-radio" type="radio" name="family" value="Backend" id="input-backend">
             <label for="input-backend">Família Backend</label>
           </div>
           <div>
-            <input type="radio" name="family" value="FullStack" id="input-fullstack">
+            <input class="input-radio" type="radio" name="family" value="FullStack" id="input-fullstack">
             <label for="input-fullstack">Família FullStack</label>
           </div>
         </div>
@@ -66,35 +70,39 @@
         <div class="input-checkbox">
           <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <div>
-            <input type="checkbox" value="HoFs" id="input-hofs">
-            <label for="input-hofs">HoFs</label>
+            <div>
+              <input class="subject" type="checkbox" value="HoFs" id="input-hofs">
+              <label for="input-hofs">HoFs</label>
+            </div>
+            <div>
+              <input class="subject" type="checkbox" value="Jest" id="input-jest">
+              <label for="input-jest">Jest</label>
+            </div>
+            <div>
+              <input class="subject" type="checkbox" value="Promises" id="input-promises">
+              <label for="input-promises">Promises</label>
+            </div>
           </div>
           <div>
-            <input type="checkbox" value="Jest" id="input-jest">
-            <label for="input-jest">Jest</label>
-          </div>
-          <div>
-            <input type="checkbox" value="Promises" id="input-promises">
-            <label for="input-promises">Promises</label>
-          </div>
-          <div>
-            <input type="checkbox" value="React" id="input-react">
-            <label for="input-react">React</label>
-          </div>
-          <div>
-            <input type="checkbox" value="SQL" id="input-sql">
-            <label for="input-sql">SQL</label>
-          </div>
-          <div>
-            <input type="checkbox" value="Python" id="input-python">
-            <label for="input-python">Python</label>
+            <div>
+              <input class="subject" type="checkbox" value="React" id="input-react">
+              <label for="input-react">React</label>
+            </div>
+            <div>
+              <input class="subject" type="checkbox" value="SQL" id="input-sql">
+              <label for="input-sql">SQL</label>
+            </div>
+            <div>
+              <input class="subject" type="checkbox" value="Python" id="input-python">
+              <label for="input-python">Python</label>
+            </div>
           </div>
         </div>
       </div>
       <hr>
       <!-- Requisito 14 Rafael -->
       <div class="satisfaction-evaluation">
-        <div>
+        <div class="input-radio-evaluation">
           <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
           <input type="radio" name="rate" value="1" id="input-1">
           <label for="input-1">1</label>
@@ -118,29 +126,29 @@
           <label for="input-10">10</label>
         </div>
         <!-- Requisito 15 Adelson -->
-        <div>
+        <div id="div-textarea">
           <label class="textarea" for="input-textarea">Deixe seu comentário:</label>
-          <textarea id="input-textarea" cols="30" rows="10" maxlength="500"></textarea>
+          <textarea id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+          <label id="counter"></label>
         </div>
         <!-- Requisito 16 Rafael -->
-        <div>
-          <label for="agreement" id="label-infos" value="selected">Você concorda com o uso das informações acima?</label>
+        <div class="agreement">
+          <label for="agreement" id="label-infos" value="selected">Você concorda com o uso das informações
+            acima?</label>
           <input type="checkbox" id="agreement">
         </div>
         <!-- Requisito 17 Adelson -->
         <div>
-          <button id="submit-btn" type="submit">Enviar</button>
+          <button class="btn-styles" id="submit-btn" type="submit">Enviar</button>
         </div>
       </div>
     </form>
+    <img src="images/trybewarts-colored.svg" alt="Trybewarts Colored" id="trybewarts-forms-logo">
     <!-- Requisito 7 Adelson -->
-    <figure>
-      <img src="images/trybewarts-colored.svg" alt="Trybewarts Colored" id="trybewarts-forms-logo">
-    </figure>
   </main>
   <!-- Requisito 19 -->
   <footer>
-    <p>Direitos reservados à Trybewarts&copy;</p>
+    <h3>Direitos reservados à Trybewarts&copy;</h3>
   </footer>
   <script src="script.js"></script>
 </body>
